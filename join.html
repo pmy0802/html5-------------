@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0 auto;
+            width: 1600px;
+        }
+        .nav, .nav2{
+            padding: 5px;
+        }
+        .nav{
+            font-size: small;
+        }
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+        }
+        .nav2 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .nav li, .nav2 li {
+            margin-right: 10px;
+        }
+        .nav a, .nav2 a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav a:hover, .nav2 a:hover {
+            color: red;
+        }
+        .m{
+            text-align: center;
+        }
+        .a{
+            text-align: center;
+        }
+        #search-box{
+            margin-bottom: 10px;
+            text-align: right;
+        }
+        .k{
+            text-align: left;
+            font-size: large;
+        }
+        .m a{
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+        .h{
+            text-align: center;
+        }
+        table{
+            display: inline-block;
+            text-align: left;
+            font-size: large;
+            line-height: 40px
+        }
+        .box{
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 100px;
+        }
+        .join_btn{
+            margin: auto;
+            display: block;
+            margin-top: 30px;
+        }
+        .home{
+            width: 80px;
+            height: 80px;
+        }
+        .nav3 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+            padding: 0 40px;
+        }
+        .nav3 a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav3 a:hover {
+            color: red;
+        }
+        footer{
+            overflow: hidden;
+            background-color: rgb(233, 230, 230);
+            box-shadow: 0 0 10px rgb(233, 230, 230);
+        }
+        .left{
+            float: left;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+        .right{
+            margin-top: 65px;
+            margin-left: 50px;
+            float: left;
+        }
+        .jo{
+            margin-top: 70px;
+            margin-left: 50px;
+            float: left;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="join.html">회원가입</a></li>
+            <li><a href="#">장바구니</a></li>
+            <li><a href="#">마이페이지</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1 class="m"><a href="main.html"><img src="홈페이지.jpg" class="home"><b>Diamond Ring</b></a></h1>
+    </div>
+    <div id="search-box">
+        <input type="text" id="search-input" placeholder="상품 검색">
+        <button id="search-btn" type="button">검색</button>
+    </div><hr>
+    <nav class="nav2">
+        <ul class="ma">
+            <li><a href="best.html">Best 100</a></li>
+            <li><a href="#">New 100</a></li>
+            <li><a href="#">귀걸이</a></li>
+            <li><a href="#">목걸이</a></li>
+            <li><a href="#">반지</a></li>
+            <li><a href="#">팔찌 / 발찌</a></li>
+            <li><a href="#">피어싱</a></li>
+            <li><a href="#">헤어</a></li>
+            <li><a href="#">쥬얼리 세트</a></li>
+        </ul>
+    </nav><hr>
+    <div class="box">
+        <h1 class="h">회원가입</h1>
+        <table >
+            <tr>
+                <th class="k" colspan="2"><br> 기본정보</th>
+            </tr>
+            <tr>
+                <td><label for="name">이름</label></td>
+                <td class="input"><input type="text" name="name" id="name" size="15" ></td>
+            </tr>
+            <tr>
+                <td><label for="id">아이디</label></td>
+                <td class="input"><input type="text" name="id" id="id" size="15"></td>
+            </tr>
+            <tr>
+                <td><label for="password">비밀번호</label></td>
+                <td class="input"><input type="password" name="password" id="password" size="15"></td>
+            </tr>
+            <tr>
+                <td><label for="text">주소</label></td>
+                <td class="input"><input type="text" name="text" id="text" size="50"></td>
+            </tr>
+            <tr>
+                <td><label for="email">이메일</label></td>
+                <td class="input"><input type="text" name="email" id="email" size="15">@
+                    <select name="email">
+                    <option value="naver">naver.com</option>
+                    <option value="goolgle">gmail.com</option>
+                    <option value="daum">daum.net</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="number">휴대폰</label></td>
+                <td class="input">
+                    <select name="number">
+                        <option value="number1">010</option>
+                        <option value="number2">011</option>
+                        <option value="number3">02</option>
+                        <option value="number4">070</option>
+                        <option value="number5">036</option>
+                    </select>
+                    -
+                    <input type="number" name="number" id="number" size="15">
+                    -
+                    <input type="number" name="number" id="number" size="15">
+                </td>
+            </tr>
+            <tr>
+                <th class="k" colspan="2"><br><br> 추가정보</th>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td class="input">
+                    <input type="radio" name="gender" id="man">남
+                    <input type="radio" name="gender" id="woman">여
+                </td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td class="input">
+                    <input type="year" name="year" id="year" size="10">년
+                    <select name="number">
+                        <option value="number1">1</option>
+                        <option value="number2">2</option>
+                        <option value="number3">3</option>
+                        <option value="number4">4</option>
+                        <option value="number5">5</option>
+                        <option value="number5">6</option>
+                        <option value="number5">7</option>
+                        <option value="number5">8</option>
+                        <option value="number5">9</option>
+                        <option value="number5">10</option>
+                        <option value="number5">11</option>
+                        <option value="number5">12</option>
+                    </select>
+                    월
+                    <select name="day">
+                        <option value="number1">1</option>
+                        <option value="number2">2</option>
+                        <option value="number3">3</option>
+                        <option value="number4">4</option>
+                        <option value="number5">5</option>
+                        <option value="number5">6</option>
+                        <option value="number5">7</option>
+                        <option value="number5">8</option>
+                        <option value="number5">9</option>
+                        <option value="number5">10</option>
+                        <option value="number5">11</option>
+                        <option value="number5">12</option>
+                        <option value="number5">13</option>
+                        <option value="number5">14</option>
+                        <option value="number5">15</option>
+                        <option value="number5">16</option>
+                        <option value="number5">17</option>
+                        <option value="number5">18</option>
+                        <option value="number5">19</option>
+                        <option value="number5">20</option>
+                        <option value="number5">21</option>
+                        <option value="number5">22</option>
+                        <option value="number5">23</option>
+                        <option value="number5">24</option>
+                        <option value="number5">25</option>
+                        <option value="number5">26</option>
+                        <option value="number5">27</option>
+                        <option value="number5">28</option>
+                        <option value="number5">29</option>
+                        <option value="number5">30</option>
+                        <option value="number5">31</option>
+                    </select>
+                    일
+                </td>
+            </tr>
+            <tr>
+                <td>추천인</td>
+                <td class="input"><input type="email" name="email" id="email" size="15"></td>
+            </tr>
+        </table>
+        <button type="submit" class="join_btn">가입하기</button>
+    </div>
+    <div>
+        <hr>
+        <nav class="nav3">
+            <ul class="ma1">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+        </nav><hr>
+    </div>
+    <footer>
+        <div class="left">
+            <h1>02-1234-2480</h1>
+            <h4>고객센터 운영시간</h4>
+            <p>평일 - 오전 09:00 ~ 오후 06:00 <br>점심 - 오후 12:00 ~ 오후 01:00 <br>토 / 일 / 공휴일 휴무</p>
+        </div>
+        <div class="jo">
+            <P>상호명:(주식회사) Diamond Ring <br>대표:박명연</P>
+            <p>사업자 등록번호 <br> 123-45-67890</p>
+        </div>
+        <div class="right">
+            <h4>위치</h4>
+            <p>서울 용산구 보광로 73</p>
+        </div>
+    </footer>
+</body>
+</html>

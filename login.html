@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Ring</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0 auto;
+            width: 1600px;
+        }
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 50px;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 200px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .login-form input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .login-form button {
+            display: block;
+            width: 320px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #555;
+        }
+
+        .nav, .nav2{
+            padding: 5px;
+        }
+        .nav{
+            font-size: small;
+        }
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+        }
+        .nav2 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .nav li, .nav2 li {
+            margin-right: 10px;
+        }
+        .nav a, .nav2 a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav a:hover, .nav2 a:hover {
+            color: red;
+        }
+        .m a{
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+        .m{
+            text-align: center;
+        }
+
+        #search-box{
+            margin-bottom: 10px;
+            text-align: right;
+        }
+        .home{
+            width: 80px;
+            height: 80px;
+        }
+        .nav3 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+            padding: 0 40px;
+        }
+        .nav3 a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav3 a:hover {
+            color: red;
+        }
+        footer{
+            overflow: hidden;
+            background-color: rgb(233, 230, 230);
+            box-shadow: 0 0 10px rgb(233, 230, 230);
+        }
+        .left{
+            float: left;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+        .right{
+            margin-top: 65px;
+            margin-left: 50px;
+            float: left;
+        }
+        .jo{
+            margin-top: 70px;
+            margin-left: 50px;
+            float: left;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="join.html">회원가입</a></li>
+            <li><a href="#">장바구니</a></li>
+            <li><a href="#">마이페이지</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1 class="m"><a href="main.html"><img src="홈페이지.jpg" class="home"><b>Diamond Ring</b></a></h1>
+    </div>
+    <div id="search-box">
+        <input type="text" id="search-input" placeholder="상품 검색">
+        <button id="search-btn" type="button">검색</button>
+    </div><hr>
+    <nav class="nav2">
+        <ul class="ma">
+            <li><a href="best.html">Best 100</a></li>
+            <li><a href="#">New 100</a></li>
+            <li><a href="#">귀걸이</a></li>
+            <li><a href="#">목걸이</a></li>
+            <li><a href="#">반지</a></li>
+            <li><a href="#">팔찌 / 발찌</a></li>
+            <li><a href="#">피어싱</a></li>
+            <li><a href="#">헤어</a></li>
+            <li><a href="#">쥬얼리 세트</a></li>
+        </ul>
+    </nav><hr>
+    <br><br><br><br><br><br>
+    <div class="login-container">
+        <h2>로그인</h2>
+        <form class="login-form" action="/login" method="post">
+            <input type="text" name="username" placeholder="아이디">
+            <input type="password" name="password" placeholder="비밀번호">
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+    <div>
+        <hr>
+        <nav class="nav3">
+            <ul class="ma1">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+        </nav><hr>
+    </div>
+    <footer>
+        <div class="left">
+            <h1>02-1234-2480</h1>
+            <h4>고객센터 운영시간</h4>
+            <p>평일 - 오전 09:00 ~ 오후 06:00 <br>점심 - 오후 12:00 ~ 오후 01:00 <br>토 / 일 / 공휴일 휴무</p>
+        </div>
+        <div class="jo">
+            <P>상호명:(주식회사) Diamond Ring <br>대표:박명연</P>
+            <p>사업자 등록번호 <br> 123-45-67890</p>
+        </div>
+        <div class="right">
+            <h4>위치</h4>
+            <p>서울 용산구 보광로 73</p>
+        </div>
+    </footer>
+</body>
+</html>
